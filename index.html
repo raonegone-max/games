@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Games</title>
+  <style>
+    body {
+      background-color: #1e1e2f;
+      /* dark navy */
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #f5f5f5;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ffcc70;
+      /* pastel yellow */
+      margin-top: 20px;
+    }
+
+    .game-container {
+      display: flex;
+      /* This is the key line */
+      justify-content: center;
+      /* Centers the games horizontally */
+      align-items: flex-start;
+      /* Aligns games to the top, useful if heights differ */
+      gap: 20px;
+      /* Adds space between the games */
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+
+    .game-card {
+      background: #2a2a3d;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      width: 320px;
+      min-height: 460px;
+      /* enough for iframe + title */
+      margin: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      /* adjust height as needed */
+      border: none;
+      border-radius: 12px;
+      background: #2a2a3d;
+      /* uniform dark background */
+      overflow: hidden;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #50727B;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      background: #005fcc;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🎮 My Games</h1>
+  <div class="game-container">
+    <div class="game-card">
+      <h2>Game 1</h2>
+      <iframe src="index2.html"></iframe>
+      <a href="index2.html" target="_blank">Play</a>
+    </div>
+    <div class="game-card">
+      <h2>Game 2</h2>
+      <iframe src="ronak/tic-tac-toe/index.html"></iframe>
+      <a href="ronak/tic-tac-toe/index.html" target="_blank">Play</a>
+    </div>
+    <div class="game-card">
+      <h2>Game 3</h2>
+      <iframe src="nargis/index.html"></iframe>
+      <a href="nargis/index.html" target="_blank">Play Fullscreen</a>
+    </div>
+  </div>
+</body>
+
+</html>
