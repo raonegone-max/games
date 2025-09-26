@@ -67,3 +67,11 @@ hr {
 .vertical-line {
     border-right: 1px solid black;
 }
+#id{
+    color:coral;
+}
+.dislay{
+    font-display: bold;
+    font-size: 20px;
+    text-align: center;
+}
